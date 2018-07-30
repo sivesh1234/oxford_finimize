@@ -23,6 +23,11 @@
 
     <!-- Custom styles for this template -->
     <link href="css/freelancer.min.css" rel="stylesheet">
+    <script>
+    $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+    </script>
     
 
   </head>
@@ -124,7 +129,36 @@ So why not get paid for something that is minimum effort and doesn’t interrupt
           <li>Post a print screen on the quote / q&a or article each day with your unique link</li>
           <li>Write an email on why somebody would love Finimize and email your friends</li>
           <li>Send a FB message to groups and pages you are in</li>
-          <li>Pitch Finimize however you feel is best, however, you can use this for inspiration: ...*modal*</li>
+          <li>Pitch Finimize however you feel is best, however, you can use this for inspiration: ...</li>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Facebook post example
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Facebook post example</h5>
+        <center>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </center>
+      </div>
+      <div class="modal-body">
+        <p>Just wanted to introduce you all to <a href="https://www.finimize.com/" target="_top">Finimize</a></p>It’s a daily financial newsletter where we share the top 2 financial news stories of the day. It’s concise, easy-to-read, intelligently written and there’s no financial jargon.</p>
+        <p> I’ve found it very useful in applications (for all sorts of jobs and internships) and preparing for interviews, as it’s a much quicker and efficient alternative to staying up-to-date through the lengthy FT or Bloomberg.</p>
+        <p>
+Finimize is also a useful platform for anyone who wants to start personally managing their savings, however small they may be.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -144,11 +178,11 @@ So why not get paid for something that is minimum effort and doesn’t interrupt
           <div>
             <p class="lead">The rules are simple and mutually beneficial 🤜💥🤛</p>
           
-            <li>Rewards if referral confirms subscription and is still a subscriber after 28 days. (change to 14 days?)
+            <li>Rewards if referral confirms subscription and is still a subscriber after 14 days.
 </li>
             <li>Rewards only for the first affiliate to refer
 </li>
-            <li>Payout every 30 days
+            <li>Payout every other Friday
 </li>
             <li>Self-referrals are not allowed. The point is to get you to refer other people. Multiple emails will not count - left to discretion of team.
 </li>
@@ -156,10 +190,9 @@ So why not get paid for something that is minimum effort and doesn’t interrupt
 </li>
             <li>We reserve the right to change the terms at anytime.
 </li>
-
-
-          
+            
         </div>
+        <p class="lead">Full T+C's are <a class="text-dark" href="https://docs.google.com/document/d/1zc6O_DtksWCQ-B5lq6KP24ZRYmi0Vv-6SU5I2kVv9xs/edit?usp=sharing">here</a>.</p>
         
       </div>
     </section>
